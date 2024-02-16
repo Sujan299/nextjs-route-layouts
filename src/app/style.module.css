@@ -1,0 +1,108 @@
+.active {
+    color: rgb(150, 0, 0);
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.navbar {
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.ulist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    list-style-type: none;
+
+}
+
+.list button {
+    width: 10rem;
+    height: 5rem;
+    font-size: xx-large;
+    font-weight: bolder;
+    border-radius: 0.75rem;
+    background-color: rgb(230, 230, 83);
+    border: none;
+    cursor: pointer;
+}
+
+.list button:hover {
+    background-color: rgb(247, 247, 8);
+
+}
+
+.list button a {
+    text-decoration: none;
+    color: black;
+}
+
+.userNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.userNav h1 {
+    font-size: x-large;
+}
+
+.userNav ul {
+    list-style: none;
+}
+
+.userNav ul li {
+    font-size: x-large;
+    margin: 2rem 0;
+}
+
+.userNav ul li a {
+    text-decoration: none;
+}
+
+
+.adminNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.adminNav h1 {
+    font-size: x-large;
+}
+
+.adminNav ul {
+    list-style: none;
+}
+
+.adminNav ul li {
+    font-size: x-large;
+    margin: 2rem 0;
+}
+
+.adminNav ul li a {
+    text-decoration: none;
+}
+
+.user {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
