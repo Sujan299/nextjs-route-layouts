@@ -5,11 +5,13 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 const adminLinks = [
-    {   id:1,
+    {   
+        // id:1,
         name: 'Home',
         href: '/admin'
     },
-    {   id:2,
+    {   
+        // id:2,
         name: 'Add products',
         href: '/add-products'
     },
