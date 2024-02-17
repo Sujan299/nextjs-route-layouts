@@ -37,8 +37,8 @@ export default function RootLayout({
             {
               userLinks.map((e) => {
                 return (
-                  <li>
-                    <Link href={e.href} key={e.id} className={clsx({ [styled.active]: pathname === e.href })}>{e.name}</Link>
+                  <li key={e.id}>
+                    <Link href={e.href}  className={clsx({ [styled.active]: pathname === e.href })}>{e.name}</Link>
                   </li>
                 )
               })

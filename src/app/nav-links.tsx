@@ -27,8 +27,8 @@ export default function NavLinks() {
                 return(
                     <nav className={styled.navbar}>
                         <ul className={styled.ulist}>
-                            <li className={styled.list}>
-                            <button><Link href={e.href} key={e.id} className={clsx({[styled.active] : pathname=== e.href})}>{e.linkName}</Link></button>
+                            <li className={styled.list} key={e.id}>
+                            <button><Link href={e.href} className={clsx({[styled.active] : pathname=== e.href})}>{e.linkName}</Link></button>
                             </li>
                         </ul>
                     </nav>

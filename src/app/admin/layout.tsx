@@ -31,7 +31,7 @@ export default function RootLayout({
                         {
                             adminLinks.map((e) => {
                                 return (
-                                    <li><Link key={e.id} href={e.href} className={clsx({ [styled.active]: pathname === e.href })}>{e.name}</Link></li>
+                                    <li key={e.id}><Link href={e.href} className={clsx({ [styled.active]: pathname === e.href })}>{e.name}</Link></li>
                                 )
                             })
                         }
