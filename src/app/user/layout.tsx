@@ -5,17 +5,17 @@ import { usePathname } from 'next/navigation'
 import clsx from 'clsx';
 const userLinks = [
   {
-    // id:1,
+    id:1,
     name: 'Home',
     href: '/user'
   },
   {
-    // id:2,
+    id:2,
     name: 'About',
     href: '/about'
   },
   {
-    // id:3,
+    id:3,
     name: 'Contact Us',
     href: '/contact'
   }
@@ -38,7 +38,7 @@ export default function RootLayout({
               userLinks.map((e) => {
                 return (
                   <li>
-                    <Link href={e.href} key={e.href} className={clsx({ [styled.active]: pathname === e.href })}>{e.name}</Link>
+                    <Link href={e.href} key={e.id} className={clsx({ [styled.active]: pathname === e.href })}>{e.name}</Link>
                   </li>
                 )
               })

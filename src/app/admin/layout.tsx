@@ -6,12 +6,12 @@ import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 const adminLinks = [
     {   
-        // id:1,
+        id:1,
         name: 'Home',
         href: '/admin'
     },
     {   
-        // id:2,
+        id:2,
         name: 'Add products',
         href: '/add-products'
     },
@@ -31,7 +31,7 @@ export default function RootLayout({
                         {
                             adminLinks.map((e) => {
                                 return (
-                                    <li><Link key={e.href} href={e.href} className={clsx({ [styled.active]: pathname === e.href })}>{e.name}</Link></li>
+                                    <li><Link key={e.id} href={e.href} className={clsx({ [styled.active]: pathname === e.href })}>{e.name}</Link></li>
                                 )
                             })
                         }
